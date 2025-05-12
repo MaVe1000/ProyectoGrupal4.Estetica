@@ -2,7 +2,7 @@
 **Proyecto grupal - Grupo N°4**  
 👩‍💻 Integrantes: M. Verónica Rebolleda, Ariana Rossi, Sofía Sanchez Ponce  
 
-🔗 **[Ver la web en GitHub Pages](AQUÍ_IRÍA_EL_LINK)**  
+🔗 **[Ver la web en GitHub Pages](https://mave1000.github.io/ProyectoGrupal4.Estetica/)**  
 
 ---
 
@@ -56,6 +56,8 @@ Si querés comunicarte con nosotras, podés hacerlo a través del formulario en 
 ---
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+gh repo clone MaVe1000/ProyectoGrupal4.Estetica
 
+git clone https://github.com/MaVe1000/ProyectoGrupal4.Estetica.git
+
+cd tu-repositorio
