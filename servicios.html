@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios - Belleza La Plata</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul id="menu-superior">
+      <li><a href="index.html">Principal</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="promociones.html">Promociones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a class="login-boton" href="iniciarSecion.html">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+  <header class="header-Servicios">
+    <h1>Servicios de Belleza en La Plata</h1>
+    <h2>Servicios destacados:</h2>
+    <select id="rubro" onchange="filtrarServicios()">
+      <option value="todos">Todos los rubros</option>
+      <option value="peluqueria">Peluquería</option>
+      <option value="masajes">Masajes</option>
+      <option value="manicuras">Manicuras</option>
+      <option value="esteticas">Estéticas</option>
+      <option value="maquillajes">Maquillajes</option>
+    </select>
+  </header>
+  <div class="servicios-destacados">
+  <div class="servicios-ladoIzquierdo">
+  <p>Regístrate para obtener los mejores beneficios y para estar siempre informada.</p>
+  <a href="iniciarSecion.html">Registrarse</a></div>
+  <div class="servicios-ladoDerecho">
+    <h4>¿Quieres que tu local destaque aquí?, 
+     contáctanos en: </h4><a  id="contacto-servicios" href="contacto.html">Contacto</a></div>
+  </div>
+  <main class="servicios">
+    
+    <div class="servicio-card peluqueria"><img src="assets/peluqueriaHairSalon.png" alt="peluqueria">
+      <h3>Peluquería Hair Salón</h3>
+    </div>
+    <div class="servicio-card masajes"> <img src="assets/Masajerelajante2.png" alt="masajes">
+      <h3>Escentials Masajes </h3>
+    </div>
+    <div class="servicio-card manicuras"> <img src="assets/manicura1.png" alt="manicura">
+      <h3>Manicuras Soy Increíble</h3>
+    </div>
+    <div class="servicio-card esteticas"> <img src="assets/estetica1.png" alt="estetica">
+      <h3>Blanca Cortés Estética</h3>
+    </div>
+    <div class="servicio-card maquillajes"> <img src="assets/maquillaje1.png" alt="maquillaje">
+      <h3>Maquillajes La Plata</h3>
+    </div>
+    <div class="servicio-card peluqueria"><img src="assets/peluqueriaBioEstetica.png" alt="peluqueria">
+      <h3>Peluquería Bio Estética</h3>
+    </div>
+    <div class="servicio-card masajes"> <img src="assets/MasajeServicios1.png" alt="masajes">
+      <h3>Masage Room La Plata</h3>
+    </div>
+    <div class="servicio-card manicuras"> <img src="assets/manicura2.png" alt="manicura">
+      <h3>Manicura Nosotras</h3>
+    </div>
+    <div class="servicio-card esteticas"> <img src="assets/estetica2.png" alt="estetica">
+      <h3>Free Skyn estética</h3>
+    </div>
+    <div class="servicio-card maquillajes"> <img src="assets/maquillaje3.png" alt="maquillaje">
+      <h3>Mabel Make Up</h3>
+    </div>
+    <div class="servicio-card peluqueria"> <img src="assets/peluqueria3.png" alt="peluqueria">
+      <h3>Peluquería Centro Fem</h3>
+    </div>
+    <div class="servicio-card masajes"> <img src="assets/masaje3.png" alt="masajes">
+      <h3>Masajes Spa Universo</h3>
+    </div>
+    <div class="servicio-card manicuras"> <img src="assets/manicura3.png" alt="manicura">
+      <h3>Reyna Manicuras</h3> 
+    </div>
+    <div class="servicio-card esteticas"> <img src="assets/estetica3.png" alt="estetica">
+      <h3>Mia Estética</h3>
+    </div>
+    <div class="servicio-card maquillajes"> <img src="assets/maquillaje5.png" alt="maquillaje">
+      <h3>Pigmentos Make Up</h3>
+    </div>
+    <div class="servicio-card esteticas"> <img src="assets/estetica4.png" alt="estetica">
+      <h3>Medicina Estética</h3>
+    </div>
+    <div class="servicio-card maquillajes"> <img src="assets/maquillaje4.png" alt="maquillaje">
+      <h3>Maquillaje Destellos</h3>
+    </div>
+    <div class="servicio-card masajes"><img src="assets/masaje4.png" alt="masajes">
+      <h3>Masajes Vibras</h3> 
+    </div><br>
+<section class="tabla-listado">
+  <h2>Listado completo de locales de La Plata:</h2>
+  <p>Filtra por rubro:</p>
+  <select id="rubroListado" onchange="filtrarTablaServicios()">
+    <option value="todoListado">Todos los rubros</option>
+    <option value="peluquería">Peluquería</option>
+    <option value="masajes">Masajes</option>
+    <option value="manicuras">Manicuras</option>
+    <option value="estéticas">Estéticas</option>
+    <option value="maquillajes">Maquillajes</option>
+  </select>
+    <table>
+      <tr>
+        <th>Rubro</th>
+        <th>Nombre del local</th>
+        <th>Dirección</th>
+        <th>Teléfono</th>
+      </tr>
+      <tr>
+        <td>Peluquería</td>
+        <td>Estilos</td>
+        <td>Calle 10, 123</td>
+        <td>+54 9 11 1234-5678</td>
+      </tr>
+      <tr>
+        <td>Masajes</td>
+        <td>Relax</td>
+        <td>Calle 20, 456</td>
+        <td>+54 9 11 2345-6789</td>
+      </tr>
+      <tr>
+        <td>Manicuras</td>
+        <td>Sofia & Lorena</td>
+        <td>Calle 30, 789</td>
+        <td>+54 9 11 3456-7890</td>
+      </tr>
+      <tr>
+        <td>Maquillajes</td>
+        <td>Iluminar</td>
+        <td>Calle 40, 101</td>
+        <td>+54 9 11 4567-8901</td>
+      </tr>
+      <tr>
+        <td>Estéticas</td>
+        <td>Glow</td>
+        <td>Calle 50, 112</td>
+        <td>+54 9 11 5678-9012</td>
+      </tr>
+      <tr>
+        <td>Estéticas</td>
+        <td>Brillo</td>
+        <td>Calle 60, 131</td>
+        <td>+54 9 11 6789-0123</td>
+      </tr>
+      <tr>
+        <td>Masajes</td>
+        <td>Zen</td>
+        <td>Calle 70, 415</td>
+        <td>+54 9 11 7890-1234</td>
+      </tr>
+      <tr>
+        <td>Manicuras</td>
+        <td>Arte en Uñas</td>
+        <td>Calle 80, 161</td>
+        <td>+54 9 11 8901-2345</td>
+      </tr>
+      <tr>
+        <td>Peluquería</td>
+        <td>Estilo Único</td>
+        <td>Calle 90, 718</td>
+        <td>+54 9 11 9012-3456</td>
+      </tr>
+      <tr>
+        <td>Maquillajes</td>
+        <td>Arte Glam</td>
+        <td>Calle 100, 192</td>
+        <td>+54 9 11 0123-4567</td>
+      </tr>
+      <tr>
+        <td>Estéticas</td>
+        <td>Salud y Belleza</td>
+        <td>Calle 110, 234</td>
+        <td>+54 9 11 1234-5678</td>
+      </tr>
+      <tr>
+        <td>Masajes</td>
+        <td>Relax Total</td>
+        <td>Calle 120, 345</td>
+        <td>+54 9 11 2345-6789</td>
+      </tr>
+      <tr>
+        <td>Manicuras</td>
+        <td>Uñas Perfectas</td>
+        <td>Calle 130, 456</td>
+        <td>+54 9 11 3456-7890</td>
+      </tr>
+      <tr>
+        <td>Peluquería</td>
+        <td>Estilo y Color</td>
+        <td>Calle 140, 567</td>
+        <td>+54 9 11 4567-8901</td>
+      </tr>
+      <tr>
+        <td>Maquillajes</td>
+        <td>Glamour</td>
+        <td>Calle 150, 678</td>
+        <td>+54 9 11 5678-9012</td>
+      </tr>
+      <tr>
+        <td>Estéticas</td>
+        <td>Bienestar</td>
+        <td>Calle 160, 789</td>
+        <td>+54 9 11 6789-0123</td>
+      </tr>
+      <tr>
+        <td>Masajes</td>
+        <td>Equilibrio</td>
+        <td>Calle 170, 890</td>
+        <td>+54 9 11 7890-1234</td>
+      </tr>
+      <tr>
+        <td>Manicuras</td>
+        <td>Estilo en Uñas</td>
+        <td>Calle 180, 901</td>
+        <td>+54 9 11 8901-2345</td>
+      </tr>
+      <tr>
+        <td>Peluquería</td>
+        <td>Estilo Chic</td>
+        <td>Calle 190, 012</td>
+        <td>+54 9 11 9012-3456</td>
+      </tr>
+      <tr>
+        <td>Maquillajes</td>
+        <td>Brillo y Color</td>
+        <td>Calle 200, 123</td>
+        <td>+54 9 11 0123-4567</td>
+      </tr>
+      <tr>
+        <td>Estéticas</td>
+        <td>Salud y Belleza</td>
+        <td>Calle 210, 234</td>
+        <td>+54 9 11 1234-5678</td>
+      </tr>
+      <tr>
+        <td>Masajes</td>
+        <td>Relax y Bienestar</td>
+        <td>Calle 220, 345</td>
+        <td>+54 9 11 2345-6789</td>
+      </tr>
+      <tr>
+        <td>Manicuras</td>
+        <td>Arte en Uñas</td>
+        <td>Calle 230, 456</td>
+        <td>+54 9 11 3456-7890</td>
+      </tr>
+      <tr>
+        <td>Peluquería</td>
+        <td>Estilo y Belleza</td>
+        <td>Calle 240, 567</td>
+        <td>+54 9 11 4567-8901</td>
+      </tr>
+      <tr>
+        <td>Maquillajes</td>
+        <td>Glamour y Belleza</td>
+        <td>Calle 250, 678</td>
+        <td>+54 9 11 5678-9012</td>
+      </tr>
+      <tr>
+        <td>Estéticas</td>
+        <td>Bienestar y Belleza</td>
+        <td>Calle 260, 789</td>
+        <td>+54 9 11 6789-0123</td>
+      </tr>
+      <tr>
+        <td>Masajes</td>
+        <td>Equilibrio y Relax</td>
+        <td>Calle 270, 890</td>
+        <td>+54 9 11 7890-1234</td>
+      </tr>
+      <tr>
+        <td>Manicuras</td>
+        <td>Uñas y Belleza</td>
+        <td>Calle 280, 901</td>
+        <td>+54 9 11 8901-2345</td>
+      </tr>
+      <tr>
+        <td>Peluquería</td>
+        <td>Estilo y Glamour</td>
+        <td>Calle 290, 012</td>
+        <td>+54 9 11 9012-3456</td>
+      </tr>
+      <tr>
+        <td>Maquillajes</td>
+        <td>Brillo y Glamour</td>
+        <td>Calle 300, 123</td>
+        <td>+54 9 11 0123-4567</td>
+      </tr>
+      <tr>
+        <td>Estéticas</td>
+        <td>Salud y Bienestar</td>
+        <td>Calle 310, 234</td>
+        <td>+54 9 11 1234-5678</td>
+      </tr>
+      <tr>
+        <td>Masajes</td>
+        <td>Relax y Estilo</td>
+        <td>Calle 320, 345</td>
+        <td>+54 9 11 2345-6789</td>
+      </tr>
+    </table>
+</section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Belleza La Plata. Todos los derechos reservados.</p>
+    <nav>
+      <ul id="navFooter">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos de servicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <p class="parraFooter">Síguenos en nuestras redes sociales</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com"><img src="assets/logoFacebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com"><img src="assets/logoInstagram.png" alt="Instagram"></a>
+      <a href="https://twitter.com"><img src="assets/logoTwitter.png" alt="Twitter"></a>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
