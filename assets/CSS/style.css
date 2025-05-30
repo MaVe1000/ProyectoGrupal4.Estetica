@@ -285,6 +285,15 @@ p.login-descripcion {
   margin: 20px;
   padding: 10px;
 }
+.registro {
+  color: #a72992;
+}
+.registro:hover {
+  color: var(--primary-color);
+  font-style: oblique;
+  cursor: pointer;
+  text-decoration: none;
+}
 
 /*Sector de Servicios*/
 .header-Servicios {
